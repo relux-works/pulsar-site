@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>პულსარი — საერთო მუსიკალური ეთერი</title>
+<link rel="canonical" href="https://barycenter.live/ka/">
+<link rel="alternate" hreflang="ru" href="https://barycenter.live/">
+<link rel="alternate" hreflang="en" href="https://barycenter.live/en/">
+<link rel="alternate" hreflang="hy" href="https://barycenter.live/hy/">
+<link rel="alternate" hreflang="ka" href="https://barycenter.live/ka/">
+<link rel="icon" type="image/png" href="/icon.png">
+<meta property="og:title" content="პულსარი — საერთო მუსიკალური ეთერი">
+<meta property="og:description" content="Одна музыка на два дома. Синхронный эфир, голосовые между треками, управление из Telegram.">
+<meta property="og:image" content="https://barycenter.live/icon.png">
+<meta property="og:url" content="https://barycenter.live/">
+<meta property="og:type" content="website">
+<meta name="description" content="ერთი მუსიკა ორი სახლისთვის. სინქრონული ეთერი, ხმოვანი ჩანართები ტრეკებს შორის, მართვა Telegram-იდან.">
+<style>
+:root { --indigo:#12103a; --deep:#0a0926; --violet:#8b7cf6; --gold:#f0b35c; --glass:rgba(255,255,255,.07); --stroke:rgba(255,255,255,.12); }
+*{margin:0;box-sizing:border-box}
+a{color:#a99cf8;text-decoration-color:rgba(169,156,248,.45);text-underline-offset:3px}
+a:hover{color:#c9c0ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,sans-serif;background:linear-gradient(180deg,var(--indigo),var(--deep) 70%);color:#eceafd;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:48px 24px}
+header{display:flex;flex-direction:column;align-items:center;text-align:center;padding:64px 0 32px;position:relative}
+.icon{width:168px;height:168px;border-radius:38px;box-shadow:0 24px 80px rgba(139,124,246,.45);position:relative;z-index:2}
+.pulse{pointer-events:none;will-change:transform,opacity;position:absolute;top:84px;left:50%;width:168px;height:168px;transform:translate(-50%,0);border-radius:50%;border:1px solid rgba(139,124,246,.4);animation:pulse 3.2s ease-out infinite;z-index:1}
+.pulse:nth-child(2){animation-delay:1.1s}.pulse:nth-child(3){animation-delay:2.2s}
+@keyframes pulse{0%{transform:translate(-50%,0) scale(1);opacity:.7}100%{transform:translate(-50%,-25%) scale(2.6);opacity:0}}
+h1{font-size:44px;margin-top:36px;letter-spacing:-.02em}
+.sub{font-size:20px;color:#cfc9f2;margin-top:12px;max-width:560px;line-height:1.5}
+.cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;justify-content:center}
+.btn{padding:14px 26px;border-radius:14px;font-size:16px;font-weight:600;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(135deg,var(--violet),#6a5ae0);color:#fff}
+.btn.ghost{background:var(--glass);border:1px solid var(--stroke);color:#eceafd}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:56px}
+.card{background:var(--glass);border:1px solid var(--stroke);border-radius:20px;padding:24px;will-change:auto}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:#cfc9f2;line-height:1.55;font-size:15px}
+.card .em{color:var(--gold)}
+.steps{margin-top:64px}
+.steps h2{font-size:28px;text-align:center;margin-bottom:24px}
+.step{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--stroke)}
+.step:last-child{border-bottom:none}
+.num{flex:0 0 40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--violet),#6a5ae0);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step p{color:#cfc9f2;line-height:1.5;margin-top:2px}
+.verify{margin-top:64px;background:var(--glass);border:1px solid var(--stroke);border-radius:20px;padding:28px;will-change:auto}
+.verify h2{font-size:22px}
+.verify p{color:#cfc9f2;margin-top:10px;line-height:1.6}
+code{background:rgba(0,0,0,.35);padding:3px 8px;border-radius:8px;font-family:"SF Mono",ui-monospace,monospace;font-size:13px;color:var(--gold)}
+footer{margin-top:72px;padding:24px 0 8px;text-align:center;color:#8a84c0;font-size:14px}
+footer a{color:#cfc9f2}
+@media(max-width:600px){h1{font-size:34px}.icon{width:132px;height:132px}.pulse{top:66px;width:132px;height:132px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><nav style="position:absolute;top:0;right:0;display:flex;gap:10px;font-size:14px"><a href="/">RU</a><a href="/en/">EN</a><a href="/hy/">HY</a><a href="/ka/">KA</a></nav>
+  <div class="pulse"></div><div class="pulse"></div><div class="pulse"></div>
+  <img class="icon" src="/icon.png" alt="Пульсар">
+  <h1>პულსარი</h1>
+  <p class="sub">საერთო მუსიკალური ეთერი ორი და მეტი სახლისთვის. მუსიკა ყველასთან სინქრონულად უკრავს. თითქოს ერთ ოთახში იყოთ.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/relux-works/barycenter/releases/latest">ჩამოტვირთვა macOS-ისთვის</a>
+    <a class="btn ghost" href="https://t.me/barycenter_bot"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:7px"><path d="M9.04 15.51 8.9 19.2c.37 0 .53-.16.73-.35l1.75-1.68 3.63 2.66c.67.37 1.14.18 1.32-.62l2.39-11.2c.21-.98-.35-1.36-1-1.12L4.1 12.1c-.96.37-.94.9-.16 1.14l3.6 1.12 8.35-5.27c.39-.26.75-.12.46.14l-7.31 6.28z"/></svg>Telegram ბოტი</a>
+  </div>
+</header>
+
+<div class="grid">
+  <div class="card"><h3>პერიასტრონი</h3><p>საერთო ეთერი. გაუგზავნე ტრეკის ან ფლეილისტის ბმული Telegram ბოტს და ის <span class="em">ყველა სახლში ერთდროულად</span> დაიწყება, წამის მეასედის სიზუსტით.</p></div>
+  <div class="card"><h3>ხმოვანი ტრეკებს შორის</h3><p>ჩაწერე ხმოვანი ბოტთან და ის <span class="em">სიმღერებს შორის</span> გაისმება, როგორც ღამის რადიოს დიჯეის ხმა. პირადად ერთ სახლს ან ერთბაშად ყველას.</p></div>
+  <div class="card"><h3>აპოასტრონი</h3><p>ყველა თავისას უსმენს. <code>/inject</code> ბრძანებით ტრეკს პირდაპირ პარტნიორის რიგში აგდებ.</p></div>
+  <div class="card"><h3>მუშაობს Spotify-სთან</h3><p>მშობლიური ინტეგრაცია: შენი პულსარი ტელეფონის Spotify-ში ჩვეულებრივ დინამიკად ჩანს. Premium ანგარიში თითო სახლში და მორჩა.</p></div>
+  <div class="card"><h3>Yandex Music — მალე</h3><p>მუშავდება: საერთო ეთერი <span class="em">სხვადასხვა სერვისის</span> სახლებს შორის. წყვილები და კომპანიები, სადაც ერთი Spotify-ზეა და მეორე Yandex-ზე, ერთად მოისმენენ და ბმულებს ნებისმიერი სერვისიდან გაუზიარებენ.</p></div>
+  <div class="card"><h3>შენი ანგარიში, შენი სახლი</h3><p>თითო სახლი თავისი Spotify-დან უკრავს, თავისი ანგარიშით. აუდიო და პაროლები <span class="em">სახლიდან არ გადის</span>, სახლებს შორის მხოლოდ ბრძანებები დაფრინავენ.</p></div>
+</div>
+
+<div class="steps">
+  <h2>სამი ნაბიჯი საერთო ეთერამდე</h2>
+  <div class="step"><div class="num">1</div><div><b>მისწერე Telegram ბოტს</b><p>ბოტი @barycenter_bot → <code>/create</code>. ბარიცენტრი შექმნილია, ბოტმა შეერთების კოდი მოგცა.</p></div></div>
+  <div class="step"><div class="num">2</div><div><b>დააყენე პულსარი</b><p>ჩამოტვირთე, გადაათრიე Applications-ში, შეიყვანე კოდი ფანჯარაში. არანაირი პარამეტრი.</p></div></div>
+  <div class="step"><div class="num">3</div><div><b>მოიწვიე შენიანები</b><p><code>/share</code> ბრძანება იძლევა ერთჯერად ბმულს პარტნიორის ან მეგობრებისთვის. მათი სახლები იგივენაირად უერთდებიან: კოდი ფანჯარაში.</p></div></div>
+</div>
+
+<div class="verify">
+  <h2>გადამოწმებადი პატიოსნება</h2>
+  <p>პულსარის ყოველი ბილდი ხელმოწერილია, Apple-ის მიერ ნოტარიზებული და ატარებს წარმოშობის კრიპტოგრაფიულ მტკიცებულებას (SLSA). ნებისმიერს შეუძლია დარწმუნდეს, რომ ბინარი ზუსტად ღია კოდიდანაა აწყობილი:</p>
+  <p style="margin-top:14px"><code>gh attestation verify Pulsar.dmg --owner relux-works</code></p>
+  <p style="margin-top:14px">წყარო კოდი: <a href="https://github.com/relux-works/barycenter">github.com/relux-works/barycenter</a></p>
+</div>
+
+<footer>
+  <p><a href="https://relux.works">Relux Works</a> · <a href="https://github.com/relux-works">GitHub</a> · შექმნილია მათთვის, ვინც ერთად უსმენს</p>
+</footer>
+</div>
+</body>
+</html>
