@@ -54,10 +54,26 @@ footer{margin-top:72px;padding:24px 0 8px;text-align:center;color:#8a84c0;font-s
 footer a{color:#cfc9f2}
 @media(max-width:600px){h1{font-size:34px}.icon{width:132px;height:132px}.pulse{top:66px;width:132px;height:132px}}
 </style>
+<script>
+(function(){
+  var saved = localStorage.getItem('pulsar-lang');
+  if (saved === 'ru') return;
+  var map = {en:'/en/', hy:'/hy/', ka:'/ka/'};
+  if (saved && map[saved]) { location.replace(map[saved]); return; }
+  if (!saved) {
+    var langs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) {
+      var l = langs[i].slice(0,2).toLowerCase();
+      if (l === 'ru') return;
+      if (map[l]) { location.replace(map[l]); return; }
+    }
+  }
+})();
+</script>
 </head>
 <body>
 <div class="wrap">
-<header><nav style="position:absolute;top:0;right:0;display:flex;gap:10px;font-size:14px"><a href="/">RU</a><a href="/en/">EN</a><a href="/hy/">HY</a><a href="/ka/">KA</a></nav>
+<header><nav style="position:absolute;top:0;right:0;display:flex;gap:10px;font-size:14px"><a href="/" onclick="localStorage.setItem('pulsar-lang','ru')">RU</a><a href="/en/" onclick="localStorage.setItem('pulsar-lang','en')">EN</a><a href="/hy/" onclick="localStorage.setItem('pulsar-lang','hy')">HY</a><a href="/ka/" onclick="localStorage.setItem('pulsar-lang','ka')">KA</a></nav>
   <div class="pulse"></div><div class="pulse"></div><div class="pulse"></div>
   <img class="icon" src="icon.png" alt="Пульсар">
   <h1>Пульсар</h1>
