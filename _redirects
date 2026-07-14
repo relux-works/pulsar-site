@@ -1,0 +1,21 @@
+# Explicit clean-URL redirects keep custom domains from returning an empty 200.
+/legal/privacy /legal/privacy/ 308
+/legal/versions/1.0/en/privacy /legal/versions/1.0/en/privacy/ 308
+/legal/privacy/ru /legal/privacy/ru/ 308
+/legal/versions/1.0/ru/privacy /legal/versions/1.0/ru/privacy/ 308
+/legal/terms /legal/terms/ 308
+/legal/versions/1.0/en/terms /legal/versions/1.0/en/terms/ 308
+/legal/terms/ru /legal/terms/ru/ 308
+/legal/versions/1.0/ru/terms /legal/versions/1.0/ru/terms/ 308
+/legal/content-guidelines /legal/content-guidelines/ 308
+/legal/versions/1.0/en/content-guidelines /legal/versions/1.0/en/content-guidelines/ 308
+/legal/content-guidelines/ru /legal/content-guidelines/ru/ 308
+/legal/versions/1.0/ru/content-guidelines /legal/versions/1.0/ru/content-guidelines/ 308
+/legal/upload-rights /legal/upload-rights/ 308
+/legal/versions/1.0/en/upload-rights /legal/versions/1.0/en/upload-rights/ 308
+/legal/upload-rights/ru /legal/upload-rights/ru/ 308
+/legal/versions/1.0/ru/upload-rights /legal/versions/1.0/ru/upload-rights/ 308
+/legal/support /legal/support/ 308
+/legal/versions/1.0/en/support /legal/versions/1.0/en/support/ 308
+/legal/support/ru /legal/support/ru/ 308
+/legal/versions/1.0/ru/support /legal/versions/1.0/ru/support/ 308
